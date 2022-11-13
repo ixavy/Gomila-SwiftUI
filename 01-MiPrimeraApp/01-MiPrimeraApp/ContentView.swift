@@ -10,19 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            HStack {
-                Image("car_mercedes")
-                    .resizable()
-                    .frame(height: 200)
-            }
-            Spacer()
-                .padding(.all)
-                .frame(height: 5.0)
-                
-            
+            Image("car_mercedes")
+                .resizable()
+                .frame(height: 230)
             Image("hamilton")
-                .padding()
-        }
+                .clipShape(Circle())
+                .background(Circle().foregroundColor(.white))
+                .overlay(Circle().stroke(.white, lineWidth: 3))
+                .shadow(radius: 18)
+                .offset(x: 0, y: -65)
+            Text("Lewis Hamilton")
+            Spacer()
+        }.edgesIgnoringSafeArea(.top)
     }
 }
 
