@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E18DD67A29225B0F00910A48 /* StatsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DD67929225B0F00910A48 /* StatsRow.swift */; };
+		E18DD67C292278B400910A48 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18DD67B292278B400910A48 /* ListView.swift */; };
 		E1EF19DE291FB95C0035BCFF /* _1_MiPrimeraAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF19DD291FB95C0035BCFF /* _1_MiPrimeraAppApp.swift */; };
-		E1EF19E0291FB95C0035BCFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF19DF291FB95C0035BCFF /* ContentView.swift */; };
+		E1EF19E0291FB95C0035BCFF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF19DF291FB95C0035BCFF /* DetailView.swift */; };
 		E1EF19E2291FB95F0035BCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EF19E1291FB95F0035BCFF /* Assets.xcassets */; };
 		E1EF19E5291FB95F0035BCFF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EF19E4291FB95F0035BCFF /* Preview Assets.xcassets */; };
 		E1EF19EC29202F080035BCFF /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF19EB29202F080035BCFF /* Driver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E18DD67929225B0F00910A48 /* StatsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsRow.swift; sourceTree = "<group>"; };
+		E18DD67B292278B400910A48 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E1EF19DA291FB95C0035BCFF /* 01-MiPrimeraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "01-MiPrimeraApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EF19DD291FB95C0035BCFF /* _1_MiPrimeraAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_MiPrimeraAppApp.swift; sourceTree = "<group>"; };
-		E1EF19DF291FB95C0035BCFF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E1EF19DF291FB95C0035BCFF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E1EF19E1291FB95F0035BCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1EF19E4291FB95F0035BCFF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1EF19EB29202F080035BCFF /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
@@ -34,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E18DD67D292278C200910A48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E18DD67B292278B400910A48 /* ListView.swift */,
+				E1EF19DF291FB95C0035BCFF /* DetailView.swift */,
+				E18DD67929225B0F00910A48 /* StatsRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E18DD67E292278E800910A48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF19EB29202F080035BCFF /* Driver.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E1EF19D1291FB95C0035BCFF = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				E1EF19DD291FB95C0035BCFF /* _1_MiPrimeraAppApp.swift */,
-				E1EF19DF291FB95C0035BCFF /* ContentView.swift */,
-				E1EF19EB29202F080035BCFF /* Driver.swift */,
+				E18DD67D292278C200910A48 /* View */,
+				E18DD67E292278E800910A48 /* Model */,
 				E1EF19E1291FB95F0035BCFF /* Assets.xcassets */,
 				E1EF19E3291FB95F0035BCFF /* Preview Content */,
 			);
@@ -141,7 +163,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1EF19EC29202F080035BCFF /* Driver.swift in Sources */,
-				E1EF19E0291FB95C0035BCFF /* ContentView.swift in Sources */,
+				E18DD67A29225B0F00910A48 /* StatsRow.swift in Sources */,
+				E18DD67C292278B400910A48 /* ListView.swift in Sources */,
+				E1EF19E0291FB95C0035BCFF /* DetailView.swift in Sources */,
 				E1EF19DE291FB95C0035BCFF /* _1_MiPrimeraAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
