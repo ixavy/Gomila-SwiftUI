@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  DetailView.swift
 //  01-MiPrimeraApp
 //
 //  Created by iXavy on 12/11/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct DetailView: View {
     var body: some View {
         VStack {
             Image("car_mercedes")
@@ -19,7 +19,14 @@ struct ContentView: View {
                 .overlay(Circle().stroke(.white, lineWidth: 3))
                 .shadow(radius: 18)
                 .offset(x: 0, y: -65)
+                .padding(.bottom, -60)
             Text("Lewis Hamilton")
+                .font(.system(size: 45))
+                .fontWeight(.bold)
+                .padding(.bottom, 80)
+            StatsRow(statKey: "Edad", statValue: "35")
+            StatsRow(statKey: "Numero", statValue: "44")
+            StatsRow(statKey: "Origen", statValue: "Reino Unido")
             Spacer()
         }.edgesIgnoringSafeArea(.top)
     }
@@ -27,6 +34,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DetailView()
     }
 }
