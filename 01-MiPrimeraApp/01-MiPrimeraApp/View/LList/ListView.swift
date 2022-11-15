@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ListView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(drivers) { driver in
+                NavigationLink(destination: DetailView(driver: driver)) {
+                    CellView(driver: driver)
+                }
+            }
+        }
     }
 }
 

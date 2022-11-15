@@ -8,32 +8,36 @@
 import SwiftUI
 
 struct DetailView: View {
+    var driver: Driver
+    
     var body: some View {
         VStack {
-            Image("car_mercedes")
+            
+            Image(driver.team.imageName)
                 .resizable()
                 .frame(height: 230)
-            Image("hamilton")
+            Image(driver.imageName)
                 .clipShape(Circle())
                 .background(Circle().foregroundColor(.white))
                 .overlay(Circle().stroke(.white, lineWidth: 3))
                 .shadow(radius: 18)
                 .offset(x: 0, y: -65)
                 .padding(.bottom, -60)
-            Text("Lewis Hamilton")
+            Text(driver.name)
                 .font(.system(size: 45))
                 .fontWeight(.bold)
                 .padding(.bottom, 80)
-            StatsRow(statKey: "Edad", statValue: "35")
-            StatsRow(statKey: "Numero", statValue: "44")
-            StatsRow(statKey: "Origen", statValue: "Reino Unido")
+            StatsRow(statKey: "Edad", statValue: String(driver.age))
+            StatsRow(statKey: "Numero", statValue: String(driver.number))
+            StatsRow(statKey: "Origen", statValue: driver.birthPlace)
             Spacer()
         }.edgesIgnoringSafeArea(.top)
+        
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(driver: drivers[0])
     }
 }
