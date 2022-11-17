@@ -43,7 +43,7 @@
 		E18DD67D292278C200910A48 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E18DD68129235DC000910A48 /* LList */,
+				E18DD68129235DC000910A48 /* List */,
 				E18DD68229235DCF00910A48 /* Detail */,
 			);
 			path = View;
@@ -57,13 +57,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E18DD68129235DC000910A48 /* LList */ = {
+		E18DD68129235DC000910A48 /* List */ = {
 			isa = PBXGroup;
 			children = (
 				E18DD67B292278B400910A48 /* ListView.swift */,
 				E18DD67F2922A60C00910A48 /* CellView.swift */,
 			);
-			path = LList;
+			path = List;
 			sourceTree = "<group>";
 		};
 		E18DD68229235DCF00910A48 /* Detail */ = {
